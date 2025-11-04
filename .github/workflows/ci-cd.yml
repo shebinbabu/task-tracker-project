@@ -1,0 +1,25 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Build Docker image
+        run: docker build -t task-tracker:test .
+      
+      - name: Run container
+        run: |
+          docker run -d --name test-container -p 8000:8000 task-tracker:test
+          sleep 5
+      
+      - name: Test API
+        run: |
+          curl -f http://localhost:8000/health || exit 1
+          docker stop test-container
+          docker rm test-container
