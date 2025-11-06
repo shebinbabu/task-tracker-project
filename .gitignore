@@ -31,7 +31,7 @@ local-data/
 terraform.tfvars.backup
 
 # act
-.bin/*
+bin/*
 # IDE
 .vscode/
 .idea/
