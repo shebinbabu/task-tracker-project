@@ -30,6 +30,8 @@ local-data/
 .terraform.lock.hcl
 terraform.tfvars.backup
 
+# act
+.bin/*
 # IDE
 .vscode/
 .idea/
