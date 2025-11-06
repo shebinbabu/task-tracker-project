@@ -4,14 +4,7 @@ A containerized Task Tracker REST API with Infrastructure as Code, CI/CD pipelin
 
 ## 🏗️ Architecture
 
-```
-Developer → GitHub → GitHub Actions → Docker Hub → AWS EC2
-                                                      ↓
-                                              Docker Container
-                                                      ↓
-                                              SQLite Database
-```
-
+![alt text](image.png)
 ## 📋 Requirements Met
 
 ✅ Task Tracker API (Flask)  

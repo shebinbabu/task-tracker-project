@@ -32,6 +32,7 @@ terraform.tfvars.backup
 
 # act
 *bin/*
+*bk
 # IDE
 .vscode/
 .idea/
