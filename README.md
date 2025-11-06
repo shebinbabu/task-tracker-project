@@ -118,28 +118,6 @@ curl -X POST http://$EC2_IP/tasks \
 curl http://$EC2_IP/tasks | jq
 ```
 
-## 📁 Project Structure
-
-```
-task-tracker-project/
-├── app/
-│   ├── app.py              # Flask application
-│   └── requirements.txt    # Python dependencies
-├── terraform/
-│   ├── main.tf            # AWS resources
-│   ├── variables.tf       # Input variables
-│   ├── outputs.tf         # Output values
-│   └── terraform.tfvars   # Configuration values
-├── scripts/
-│   └── deploy.sh          # Deployment script
-├── .github/
-│   └── workflows/
-│       └── ci-cd.yml      # CI/CD pipeline
-├── Dockerfile             # Container definition
-├── .gitignore
-└── README.md
-```
-
 ## 🛠️ Technologies Used
 
 - **Application**: Flask (Python)
